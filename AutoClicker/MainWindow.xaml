@@ -1,0 +1,21 @@
+﻿<Window x:Class="AutoClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoClicker"
+        mc:Ignorable="d"
+        Title="Beef's Auto-Cliker v1.0" HorizontalContentAlignment="Center" Height="150" Width="250">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="7*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <Button x:Name="TimerButton" Content="Start" Margin="2,49,2,10" Grid.Column="1" FontSize="24" Click="Button_Click" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="TimerTextBox" Text="1" TextWrapping="Wrap" Margin="117,15,2,0" VerticalAlignment="Top" FontSize="16" Height="24" Grid.Column="2" Grid.ColumnSpan="2" />
+        <Label Content="Delay Time (ms)" Grid.Column="1" Margin="2,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" FontSize="16" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
